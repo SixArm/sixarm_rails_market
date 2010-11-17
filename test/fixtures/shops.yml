@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name_in_en: "AAA Shop"
+  description_in_en: "AAA Shop is awesome."
+two:
+  name_in_en: "BBB Shop"
+  description_in_en: "BBB Shop is beautiful."
+

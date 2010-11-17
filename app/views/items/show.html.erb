@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= t(:Item) %></h1>
+
+<h3><%= t(:Name) %></h3>
+<%= @item.name %>
+
+<h3><%= t(:Description) %></h3>
+<%= @item.description %>
+
+<h3><%= t(:Price) %></h3>
+<%= @item.price %> <%= t(:USD) %>
+
+<h3><%= t(:Length) %></h3>
+<%= @item.length %> <%= t(:Meters) %>
+
+<h3><%= t(:Width) %></h3>
+<%= @item.height %> <%= t(:Meters) %>
+
+<h3><%= t(:Height) %></h3>
+<%= @item.height %> <%= t(:Meters) %>
+
+<h3><%= t(:Volume) %></h3>
+<%= @item.volume %> <%= t(:Meters) %><sup>3</sup>
+
+<h3><%= t(:Weight) %></h3>
+<%= @item.weight %> <%= t(:Grams) %>
+
+<%= link_to_edit, edit_item_path(@item) %> |
+<%= link_to_back, items_path %>

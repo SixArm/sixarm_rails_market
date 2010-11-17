@@ -1,0 +1,55 @@
+<% size_short = 5 %>
+
+<%= form_for(@item) do |f| %>
+  <% if @item.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
+
+      <ul>
+      <% @item.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t(:Name) %><br/>
+    <%= f.text_field :name_in_en %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Description) %><br/>
+    <%= f.text_area :description_in_en %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Price) %><br/>
+    <%= f.text_field :price_in_usd, :size => size_short %> <%= t(:USD) %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Height) %><br/>
+    <%= f.text_field :height, :size => size_short %> <%= t(:Meters) %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Width) %><br/>
+    <%= f.text_field :width, :size => size_short %> <%= t(:Meters) %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Length) %><br/>
+    <%= f.text_field :length, :size => size_short %> <%= t(:Meters) %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Weight) %><br/>
+    <%= f.text_field :mass, :size => size_short %> <%= t(:Grams) %>
+  </div>
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
