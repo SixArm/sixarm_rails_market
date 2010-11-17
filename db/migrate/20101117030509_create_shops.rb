@@ -26,6 +26,8 @@ class CreateShops < ActiveRecord::Migration
       t.column :description_in_ja, :text, :default => ""  # ja = japanese
       t.column :description_in_zh, :text, :default => ""  # zh = chinese 
 
+      # associations
+      
     end
 
     add_index(TABLE, :name_in_de)

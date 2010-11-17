@@ -11,15 +11,15 @@
 
 <% @shops.each do |shop| %>
   <tr>
-    <td><%= link_to t(:Show), shop %></td>
-    <td><%= link_to t(:Edit), edit_shop_path(shop) %></td>
-    <td><%= link_to t(:Destroy), shop, :confirm => t(:Destroy_Confirm), :method => :delete %></td>
+    <td><%= link_to_show shop %></td>
+    <td><%= link_to_edit edit_shop_path(shop) %></td>
+    <td><%= link_to_destroy shop %></td>
     <td><%= shop.name %></td>
-    <td><%= shop.description %></td>
+    <td><%= shop.description[0,30] %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to_new, new_shop_path %>
+<%= link_to_new new_shop_path %>

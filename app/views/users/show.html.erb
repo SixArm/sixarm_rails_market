@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= t(:User) %></h1> 
+<%= h1(:User) %> 
 
-<h3><%= t(:Name) %></h3>
+<%= h3(:Name) %>
 <%= @user.name %>
 
-<h3><%= t(:Description) %></h3>
-<%= @user.description %></td>
+<%= h3(:Description) %>
+<%= @user.description %>
 
-<%= link_to_edit, edit_user_path(@user) %> |
-<%= link_to_back, users_path %>
+<%= link_to_edit edit_user_path(@user) %> |
+<%= link_to_back users_path %>

@@ -17,9 +17,9 @@
 
 <% @items.each do |item| %>
   <tr>
-    <td><%= link_to t(:Show), item %></td>
-    <td><%= link_to t(:Edit), edit_item_path(item) %></td>
-    <td><%= link_to t(:Destroy), item, :confirm => t(:Destroy_Confirm), :method => :delete %></td>
+    <td><%= link_to_show item %></td>
+    <td><%= link_to_edit edit_item_path(item) %></td>
+    <td><%= link_to_destroy item %></td>
     <td><%= item.name %></td>
     <td><%= item.price %></td>
     <td><%= item.length %></td>
@@ -34,4 +34,4 @@
 
 <br />
 
-<%= link_to_new, new_item_path %>
+<%= link_to_new new_item_path %>

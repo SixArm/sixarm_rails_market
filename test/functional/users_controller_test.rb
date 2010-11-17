@@ -1,8 +1,9 @@
 require 'test_helper'
 
 class UsersControllerTest < ActionController::TestCase
+
   setup do
-    @user = users(:one)
+    @user = users(:user1)
   end
 
   test "should get index" do
@@ -20,7 +21,6 @@ class UsersControllerTest < ActionController::TestCase
     assert_difference('User.count') do
       post :create, :user => @user.attributes
     end
-
     assert_redirected_to user_path(assigns(:user))
   end
 
@@ -43,7 +43,7 @@ class UsersControllerTest < ActionController::TestCase
     assert_difference('User.count', -1) do
       delete :destroy, :id => @user.to_param
     end
-
     assert_redirected_to users_path
   end
+
 end

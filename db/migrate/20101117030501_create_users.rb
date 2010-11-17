@@ -32,7 +32,7 @@ class CreateUsers < ActiveRecord::Migration
 
     end
 
-    add_index(TABLE, :username)
+    add_index(TABLE, :username, :unique)
     add_index(TABLE, :name_in_de)
     add_index(TABLE, :name_in_en)
     add_index(TABLE, :name_in_es)

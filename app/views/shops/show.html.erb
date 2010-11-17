@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= t(:Shop) %></h1>
+<%= h1(:Shop) %>
 
-<h3><%= t(:Name) %></h3>
-<%= @item.name %>
+<%= h3(:Name) %><
+<%= @shop.name %>
 
-<h3><%= t(:Description) %></h3>
-<%= @item.description %>
+<%= h3(:Description) %>
+<%= @shop.description %>
 
-<%= link_to_edit, edit_shop_path(@shop) %> |
-<%= link_to_back, shops_path %>
+<%= link_to_edit edit_shop_path(@shop) %> |
+<%= link_to_back shops_path %>

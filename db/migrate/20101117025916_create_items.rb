@@ -41,6 +41,9 @@ class CreateItems < ActiveRecord::Migration
       t.column :price_in_jpy, :decimal, :precision => 8, :scale => 2, :default => 0  # japan yen
       t.column :price_in_usd, :decimal, :precision => 8, :scale => 2, :default => 0  # united states dollar
 
+      # associations
+      t.belongs_to :shop
+      
     end
 
     add_index(TABLE, :name_in_de)

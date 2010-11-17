@@ -1,8 +1,6 @@
-# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
-
-one:
+user1:
   name_in_en: "Andy"
   description_in_en: "Andy is awesome."
-two:
+user2:
   name_in_en: "Beth"
   description_in_en: "Beth is beautiful."

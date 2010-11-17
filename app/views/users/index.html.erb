@@ -11,9 +11,9 @@
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= link_to t(:Show), user %></td>
-    <td><%= link_to t(:Edit), edit_user_path(user) %></td>
-    <td><%= link_to t(:Destroy), user, :confirm => t(:Destroy_Confirm), :method => :delete %></td>
+    <td><%= link_to_show user %></td>
+    <td><%= link_to_edit edit_user_path(user) %></td>
+    <td><%= link_to_destroy user %></td>
     <td><%= user.name %></td> 
     <td><%= user.description[0,30] %></td> 
   </tr>
@@ -22,4 +22,4 @@
 
 <br />
 
-<%= link_to_new, new_user_path %>
+<%= link_to_new new_user_path %>

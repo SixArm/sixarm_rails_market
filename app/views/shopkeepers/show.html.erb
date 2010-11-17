@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<%= h1(:Shopkeeper) %>
+
+<%= h3(:Shop) %>
+<%= @shopkeeper.shop.id %> <%= @shopkeeper.shop.name %>
+
+<%= h3(:User) %>
+<%= @shopkeeper.user.id %> <%= @shopkeeper.user.name %>
+
+<%= link_to_edit edit_shopkeeper_path(@shopkeeper) %> |
+<%= link_to_back shopkeepers_path %>

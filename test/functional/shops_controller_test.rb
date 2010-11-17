@@ -1,8 +1,9 @@
 require 'test_helper'
 
 class ShopsControllerTest < ActionController::TestCase
+
   setup do
-    @shop = shops(:one)
+    @shop = shops(:shop1)
   end
 
   test "should get index" do
@@ -20,7 +21,6 @@ class ShopsControllerTest < ActionController::TestCase
     assert_difference('Shop.count') do
       post :create, :shop => @shop.attributes
     end
-
     assert_redirected_to shop_path(assigns(:shop))
   end
 
@@ -43,7 +43,7 @@ class ShopsControllerTest < ActionController::TestCase
     assert_difference('Shop.count', -1) do
       delete :destroy, :id => @shop.to_param
     end
-
     assert_redirected_to shops_path
   end
+
 end

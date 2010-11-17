@@ -1,0 +1,29 @@
+<h1><%= t(:Shopkeepers) %></h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th><%= t(:Shop) %> <%= t(:Id) %></th>
+    <th><%= t(:Shop) %> <%= t(:Name) %></th>
+    <th><%= t(:User) %> <%= t(:Id) %></th>
+    <th><%= t(:User) %> <%= t(:Name) %></th>
+  </tr>
+
+<% @shopkeepers.each do |shopkeeper| %>
+  <tr>
+    <td><%= link_to_show shopkeeper %></td>
+    <td><%= link_to_edit edit_shopkeeper_path(shopkeeper) %></td>
+    <td><%= link_to_destroy shopkeeper %></td>
+    <td><%= shopkeeper.shop.id %></td>
+    <td><%= shopkeeper.shop.name %></td>
+    <td><%= shopkeeper.user.id %></td>
+    <td><%= shopkeeper.user.name %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to_new new_shopkeeper_path %>

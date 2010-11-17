@@ -1,0 +1,26 @@
+<%= form_for(@shopkeeper) do |f| %>
+  <% if @shopkeeper.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@shopkeeper.errors.count, "error") %><%= t(:error_explanation_header) %></h2>
+
+      <ul>
+      <% @shopkeeper.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">  
+    <%= f.label "#{t(:Shop)} #{t(:Id)}" %><br/> 
+    <%= f.text_field :shop_id %>
+
+  <div class="field">  
+    <%= f.label "#{t(:User)} #{t(:Id)}" %><br/> 
+    <%= f.text_field :user_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

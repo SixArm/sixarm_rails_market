@@ -1,4 +1,6 @@
 Market::Application.routes.draw do
+  resources :shopkeepers
+
   resources :shops
 
   resources :users
