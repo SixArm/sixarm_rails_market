@@ -16,6 +16,21 @@ a { color: #000; }
 a:visited { color: #666; }
 a:hover { color: #fff; background-color:#000; }
 
+table {
+  border: 1px solid gray;
+  border-collapse: collapse;
+  border-spacing: 0px;
+}
+
+th {
+  border: 1px solid gray;
+}
+
+td {
+  border: 1px solid gray;
+  padding: 0.5em;
+}
+
 div.field, div.actions {
   margin-bottom: 10px;
 }
@@ -53,4 +68,9 @@ div.field, div.actions {
 #error_explanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+#ending {
+  border-top: 1px solid gray;
+  margin-top: 2em;
 }

@@ -15,7 +15,7 @@
   <tr>
     <td><%= link_to_show shopkeeper %></td>
     <td><%= link_to_edit edit_shopkeeper_path(shopkeeper) %></td>
-    <td><%= link_to_destroy shopkeeper %></td>
+    <td><%= link_to_delete shopkeeper %></td>
     <td><%= shopkeeper.shop.id %></td>
     <td><%= shopkeeper.shop.name %></td>
     <td><%= shopkeeper.user.id %></td>
@@ -24,6 +24,6 @@
 <% end %>
 </table>
 
-<br />
-
-<%= link_to_new new_shopkeeper_path %>
+<div id="ending">
+<%= link_to_create new_shopkeeper_path %>
+</div>

@@ -2,8 +2,10 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  Destroy: "Destroy"
-  Destroy_Confirm: "Are you sure?"
+  Back: "Back"
+  Create: "Create"
+  Delete: "Delete"
+  Delete_Confirm: "Are you sure?"
   Description: "Description"
   Edit: "Edit"
   error_explanation_header: " prohibited this shop from being saved:"
@@ -13,7 +15,8 @@ en:
   Item: "Item"
   Items: "Items"
   Name: "Name"
-  Name: "Names"
+  Names: "Names"
+  New: "New"
   Shop: "Shop"
   Shops: "Shops"
   Shopkeeper: "Shopkeeper"

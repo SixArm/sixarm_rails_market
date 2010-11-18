@@ -26,5 +26,7 @@
 <%= h3(:Weight) %>
 <%= @item.weight %> <%= t(:Grams) %>
 
-<%= link_to_edit edit_item_path(@item) %> |
+<div id="ending">
 <%= link_to_back items_path %>
+<%= link_to_edit edit_item_path(@item) %>
+</div>

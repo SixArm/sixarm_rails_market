@@ -2,11 +2,13 @@
 
 <%= h1(:Shop) %>
 
-<%= h3(:Name) %><
+<%= h3(:Name) %>
 <%= @shop.name %>
 
 <%= h3(:Description) %>
 <%= @shop.description %>
 
-<%= link_to_edit edit_shop_path(@shop) %> |
+<div id="ending" %>
 <%= link_to_back shops_path %>
+<%= link_to_edit edit_shop_path(@shop) %>
+</div>
