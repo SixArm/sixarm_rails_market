@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101117035435) do
+ActiveRecord::Schema.define(:version => 10000000000004) do
 
   create_table "items", :force => true do |t|
     t.datetime "created_at"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20101117035435) do
     t.decimal  "price_in_inr",      :precision => 8, :scale => 2, :default => 0.0
     t.decimal  "price_in_jpy",      :precision => 8, :scale => 2, :default => 0.0
     t.decimal  "price_in_usd",      :precision => 8, :scale => 2, :default => 0.0
+    t.integer  "shop_id"
   end
 
   add_index "items", ["height"], :name => "index_items_on_height"
@@ -62,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20101117035435) do
   add_index "items", ["price_in_inr"], :name => "index_items_on_price_in_inr"
   add_index "items", ["price_in_jpy"], :name => "index_items_on_price_in_jpy"
   add_index "items", ["price_in_usd"], :name => "index_items_on_price_in_usd"
+  add_index "items", ["shop_id"], :name => "index_items_on_shop_id"
   add_index "items", ["width"], :name => "index_items_on_width"
 
   create_table "shopkeepers", :force => true do |t|

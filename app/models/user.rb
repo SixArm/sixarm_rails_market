@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 
   has_many :shopkeepers
+  has_many :shops, :through => :shopkeepers
 
   def name
     name_in_en
