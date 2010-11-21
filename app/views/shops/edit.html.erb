@@ -2,8 +2,6 @@
 
 <%= render 'form' %>
 
-<div id="ending">
-<%= link_to_back shops_path %>
-<%= link_to_show @shop %>
-</div>
+<%= ending_view_edit(shops_path,@shop) %>
+
 

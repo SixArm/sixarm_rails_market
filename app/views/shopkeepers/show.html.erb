@@ -8,8 +8,6 @@
 <%= h3(:User) %>
 <%= @shopkeeper.user.id %> <%= @shopkeeper.user.name %>
 
-<div id="ending">
-<%= link_to_back shopkeepers_path %>
-<%= link_to_edit edit_shopkeeper_path(@shopkeeper) %>
-</div>
+<%= ending_view_show(shopkeepers_path, edit_shopkeeper_path(@shopkeeper) %>
+
 

@@ -8,8 +8,5 @@
 <%= h3(:Description) %>
 <%= @user.description %>
 
-<div id="ending">
-<%= link_to_back users_path %>
-<%= link_to_edit edit_user_path(@user) %>
-</div>
+<%= ending_view_show(users_path,edit_user_path(@user)) %>
 

@@ -8,7 +8,4 @@
 <%= h3(:Description) %>
 <%= @shop.description %>
 
-<div id="ending" %>
-<%= link_to_back shops_path %>
-<%= link_to_edit edit_shop_path(@shop) %>
-</div>
+<%= ending_view_show(shops_path,edit_shop_path(@shop)) %>

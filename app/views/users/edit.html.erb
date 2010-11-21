@@ -2,7 +2,4 @@
 
 <%= render 'form' %>
 
-<div id="ending">
-<%= link_to_back users_path %>
-<%= link_to_show @user %>
-</div>
+<%= ending_view_edit(users_path,@user) %>
