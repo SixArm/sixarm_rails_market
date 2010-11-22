@@ -4,8 +4,6 @@
   <thead>
     <tr>
       <th></th>
-      <th></th>
-      <th></th>
       <th><%= t(:Name) %></th>
       <th><%= t(:Price) %></th>
       <th><%= t(:Length) %></th>
@@ -20,9 +18,7 @@
   <tbody>
     <% @items.each do |item| %>
     <tr>
-      <td><%= link_to_show item %></td>
-      <td><%= link_to_edit edit_item_path(item) %></td>
-      <td><%= link_to_delete item %></td>
+      <td><%= link_to_show_edit_delete(item,edit_item_path(item)) %></td>
       <td><%= item.name %></td>
       <td><%= item.price %></td>
       <td><%= item.length %></td>

@@ -1,7 +1,10 @@
 shop1:
-  name_in_en: "AAA Shop"
-  description_in_en: "AAA Shop is awesome."
+  name_in_en: "Test Shop A"
+  description_in_en: "Test Shop A's description goes here."
 shop2:
-  name_in_en: "BBB Shop"
-  description_in_en: "BBB Shop is beautiful."
+  name_in_en: "Test Shop B"
+  description_in_en: "Test Shop B's description goes here."
+shop3:
+  name_in_en: "Test Shop C"
+  description_in_en: "Test Shop C's description goes here."
 

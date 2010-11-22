@@ -1,4 +1,9 @@
 item1:
-  name_in_en: "Aaa"
+  name_in_en: "Test Item A"
+  description_in_en: "My Item A's description goes here."
 item2:
-  name_in_en: "Bbb"
+  name_in_en: "Test Item B"
+  description_in_en: "Test Item B's description goes here."
+item3:
+  name_in_en: "Test Item C"
+  description_in_en: "Test Item C's description goes here."

@@ -14,7 +14,7 @@ module BeginAndEndViewHelper
   #   => "<h1>foogoohoo</h1>"
 
   def begin_view(*html_fragments)
-    "<h1>#{html_fragments.join}</h1>\n\n".html_safe
+    "<div id=\"begin_view\"><h1>#{html_fragments.join}</h1></div>\n\n".html_safe
   end
 
 
@@ -69,7 +69,7 @@ module BeginAndEndViewHelper
   #   => "<div id="end">foogoohoo</div>>
 
   def end_view(*html_fragments)
-    "<div id=\"end\">#{html_fragments.join}</div>\n".html_safe
+    "<div id=\"end_view\">#{html_fragments.join}</div>\n".html_safe
   end
 
 

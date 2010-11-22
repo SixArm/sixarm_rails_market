@@ -73,7 +73,14 @@ div.field, div.actions {
   list-style: square;
 }
 
-#ending {
+#begin_view {
+  background: #eee;
+  padding: 0.1em 0 0.1em 0;
+}
+
+#end_view {
+  background: #eee;
   border-top: 1px solid gray;
   margin-top: 2em;
+  padding: 1em 0 1em 0;
 }

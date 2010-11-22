@@ -1,6 +1,9 @@
 user1:
   name_in_en: "Andy"
-  description_in_en: "Andy is awesome."
+  description_in_en: "Andy's description goes here."
 user2:
   name_in_en: "Beth"
-  description_in_en: "Beth is beautiful."
+  description_in_en: "Beth's description goes here."
+user3:
+  name_in_en: "Cate"
+  description_in_en: "Cate's description goes here."

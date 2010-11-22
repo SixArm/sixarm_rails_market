@@ -4,3 +4,6 @@ shopkeeper1:
 shopkeeper2:
   shop: shop2
   user: user2
+shopkeeper3:
+  shop: shop3
+  user: user3

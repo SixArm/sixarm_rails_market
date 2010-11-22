@@ -185,44 +185,44 @@ table.display td.center {
  * DataTables row classes
  */
 table.display tr.odd.gradeA {
-	background-color: #ddffdd;
+	/* background-color: #ddffdd; */
 }
 
 table.display tr.even.gradeA {
-	background-color: #eeffee;
+	/* background-color: #eeffee; */
 }
 
 table.display tr.odd.gradeC {
-	background-color: #ddddff;
+	/* background-color: #ddddff; */
 }
 
 table.display tr.even.gradeC {
-	background-color: #eeeeff;
+	/* background-color: #eeeeff; */
 }
 
 table.display tr.odd.gradeX {
-	background-color: #ffdddd;
+	/* background-color: #ffdddd; */
 }
 
 table.display tr.even.gradeX {
-	background-color: #ffeeee;
+	/* background-color: #ffeeee; */
 }
 
 table.display tr.odd.gradeU {
-	background-color: #ddd;
+	/* background-color: #ddd; */
 }
 
 table.display tr.even.gradeU {
-	background-color: #eee;
+	/* background-color: #eee; */
 }
 
 
 tr.odd {
-	background-color: #E2E4FF;
+	/* background-color: #E2E4FF; */
 }
 
 tr.even {
-	background-color: white;
+	/* background-color: white; */
 }
 
 
