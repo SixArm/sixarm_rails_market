@@ -1,6 +1,6 @@
-<h1><%= t(:Shopkeepers) %></h1>
+<%= begin_view_index(:Shopkeepers) %>
 
-<table>
+<table class="datatable">
   <thead>
     <tr>
       <th></th>
@@ -31,5 +31,5 @@
 
 </table>
 
-<%= ending_view_index(new_shopkeeper_path) %>
+<%= end_view_index(new_shopkeeper_path) %>
 

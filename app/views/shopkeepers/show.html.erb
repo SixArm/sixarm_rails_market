@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= h1(:Shopkeeper) %>
+<%= begin_view_show(:Shopkeeper) %>
 
 <%= h3(:Shop) %>
 <%= @shopkeeper.shop.id %> <%= @shopkeeper.shop.name %>
@@ -8,6 +8,6 @@
 <%= h3(:User) %>
 <%= @shopkeeper.user.id %> <%= @shopkeeper.user.name %>
 
-<%= ending_view_show(shopkeepers_path, edit_shopkeeper_path(@shopkeeper) %>
+<%= end_view_show(shopkeepers_path, edit_shopkeeper_path(@shopkeeper)) %>
 
 

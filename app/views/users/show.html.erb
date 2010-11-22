@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= h1(:User) %> 
+<%= begin_view_show(:User) %>
 
 <%= h3(:Name) %>
 <%= @user.name %>
@@ -8,5 +8,5 @@
 <%= h3(:Description) %>
 <%= @user.description %>
 
-<%= ending_view_show(users_path,edit_user_path(@user)) %>
+<%= end_view_show(users_path,edit_user_path(@user)) %>
 

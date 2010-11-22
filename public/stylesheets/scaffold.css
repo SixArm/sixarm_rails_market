@@ -22,13 +22,16 @@ table {
   border-spacing: 0px;
 }
 
-th {
+th, td {
   border: 1px solid gray;
+  padding: 0.4em;
+}
+
+th {
+  text-align: left;
 }
 
 td {
-  border: 1px solid gray;
-  padding: 0.5em;
 }
 
 div.field, div.actions {

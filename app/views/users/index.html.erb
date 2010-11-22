@@ -1,6 +1,6 @@
-<h1><%= t(:Users) %></h1>
+<%= begin_view_index(:Users) %>
 
-<table>
+<table class="datatable">
   <thead>
     <tr>
       <th></th>
@@ -27,5 +27,5 @@
 
 </table>
 
-<%= ending_view_index(users_path,new_user_path) %>
+<%= end_view_index(new_user_path) %>
 

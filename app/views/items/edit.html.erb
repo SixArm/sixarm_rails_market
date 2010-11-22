@@ -1,6 +1,6 @@
-<h1><%= t(:Edit) %> <%= t(:Item) %></h1>
+<%= begin_view_edit(:Item) %>
 
 <%= render 'form' %>
 
-<%= ending_view_edit(items_path,@item) %>
+<%= end_view_edit(items_path,@item) %>
 

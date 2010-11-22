@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= h1(:Item) %>
+<%= begin_view_show(:Item) %>
 
 <%= h3(:Name) %>
 <%= @item.name %>
@@ -26,5 +26,5 @@
 <%= h3(:Weight) %>
 <%= @item.weight %> <%= t(:Grams) %>
 
-<%= ending_view_show(items_path, edit_item_path(@item) %>
+<%= end_view_show(items_path, edit_item_path(@item)) %>
 

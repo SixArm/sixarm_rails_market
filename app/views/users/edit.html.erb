@@ -1,5 +1,3 @@
-<h1><%= t(:Edit) %> <%= t(:User) %></h1>
-
+<%= begin_view_edit(:User) %>
 <%= render 'form' %>
-
-<%= ending_view_edit(users_path,@user) %>
+<%= end_view_edit(users_path,@user) %>

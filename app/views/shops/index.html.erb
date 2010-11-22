@@ -1,6 +1,6 @@
-<h1><%= t(:Shops) %></h1>
+<%= begin_view_index(:Shops) %>
 
-<table>
+<table class="datatable">
   <thead>
     <tr>
       <th></th>
@@ -27,5 +27,5 @@
 
 </table>
 
-<%= ending_view_index(new_shop_path) %>
+<%= end_view_index(new_shop_path) %>
 

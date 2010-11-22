@@ -1,6 +1,4 @@
-<h1><%= t(:New) %> <%= t(:Shop) %></h1>
-
+<%= begin_view_new(:Shop) %>
 <%= render 'form' %>
-
-<%= ending_view_new(shops_path) %>
+<%= end_view_new(shops_path) %>
 

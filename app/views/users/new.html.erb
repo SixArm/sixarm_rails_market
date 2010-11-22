@@ -1,6 +1,4 @@
-<h1><%= t(:New) %> <%= t(:User) %></h1>
-
+<%= begin_view_new(:User) %>
 <%= render 'form' %>
-
-<%= ending_view_new(users_path) %>
+<%= end_view_new(users_path) %>
 

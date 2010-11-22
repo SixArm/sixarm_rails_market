@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= h1(:Shop) %>
+<%= begin_view_show(:Shop) %>
 
 <%= h3(:Name) %>
 <%= @shop.name %>
@@ -8,4 +8,4 @@
 <%= h3(:Description) %>
 <%= @shop.description %>
 
-<%= ending_view_show(shops_path,edit_shop_path(@shop)) %>
+<%= end_view_show(shops_path,edit_shop_path(@shop)) %>

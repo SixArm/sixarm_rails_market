@@ -1,7 +1,5 @@
-<h1><%= t(:Edit) %> <%= t(:Shopkeeper) %></h1>
-
+<%= begin_view_edit(:Shopkeeper) %>
 <%= render 'form' %>
-
-<%= ending_vew_edit(shopkeepers_path,@shopkeeper) %>
+<%= end_view_edit(shopkeepers_path,@shopkeeper) %>
 
 
