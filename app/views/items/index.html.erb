@@ -1,35 +1,42 @@
 <h1><%= t(:Items) %></h1>
 
 <table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th><%= t(:Name) %></th>
-    <th><%= t(:Price) %></th>
-    <th><%= t(:Length) %></th>
-    <th><%= t(:Width) %></th>
-    <th><%= t(:Height) %></th>
-    <th><%= t(:Volume) %></th>
-    <th><%= t(:Weight) %></th>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th><%= t(:Name) %></th>
+      <th><%= t(:Price) %></th>
+      <th><%= t(:Length) %></th>
+      <th><%= t(:Width) %></th>
+      <th><%= t(:Height) %></th>
+      <th><%= t(:Volume) %></th>
+      <th><%= t(:Weight) %></th>
     <th><%= t(:Description) %></th>
-  </tr>
+    </tr>
+  </thead>
 
-<% @items.each do |item| %>
-  <tr>
-    <td><%= link_to_show item %></td>
-    <td><%= link_to_edit edit_item_path(item) %></td>
-    <td><%= link_to_delete item %></td>
-    <td><%= item.name %></td>
-    <td><%= item.price %></td>
-    <td><%= item.length %></td>
-    <td><%= item.width %></td>
-    <td><%= item.height %></td>
-    <td><%= item.volume %></td>
-    <td><%= item.weight %></td>
-    <td><%= item.description[0,30] %></td>
-  </tr>
-<% end %>
+  <tbody>
+    <% @items.each do |item| %>
+    <tr>
+      <td><%= link_to_show item %></td>
+      <td><%= link_to_edit edit_item_path(item) %></td>
+      <td><%= link_to_delete item %></td>
+      <td><%= item.name %></td>
+      <td><%= item.price %></td>
+      <td><%= item.length %></td>
+      <td><%= item.width %></td>
+      <td><%= item.height %></td>
+      <td><%= item.volume %></td>
+      <td><%= item.weight %></td>
+      <td><%= item.description[0,30] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+
+  <tfoot></tfoot>
+
 </table>
 
 <%= ending_view_index(new_item_path) %>

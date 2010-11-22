@@ -1,23 +1,30 @@
 <h1><%= t(:Users) %></h1>
 
 <table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th><%= t(:Name) %></th>
-    <th><%= t(:Description) %></th>
-  </tr>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th><%= t(:Name) %></th>
+      <th><%= t(:Description) %></th>
+    </tr>
+  </thead>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%= link_to_show user %></td>
-    <td><%= link_to_edit edit_user_path(user) %></td>
-    <td><%= link_to_delete user %></td>
-    <td><%= user.name %></td> 
-    <td><%= user.description[0,30] %></td> 
-  </tr>
-<% end %>
+  <tbody>
+    <% @users.each do |user| %>
+    <tr>
+      <td><%= link_to_show user %></td>
+      <td><%= link_to_edit edit_user_path(user) %></td>
+      <td><%= link_to_delete user %></td>
+      <td><%= user.name %></td> 
+      <td><%= user.description[0,30] %></td> 
+    </tr>
+    <% end %>
+  </tbody>
+
+  <tfoot></tfoot>
+
 </table>
 
 <%= ending_view_index(users_path,new_user_path) %>

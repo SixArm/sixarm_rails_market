@@ -1,23 +1,30 @@
 <h1><%= t(:Shops) %></h1>
 
 <table>
-  <tr>
-    <th></th>
-    <th></th>
-    <th></th>
-    <th><%= t(:Name) %></th>
-    <th><%= t(:Description) %></th>
-  </tr>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th><%= t(:Name) %></th>
+      <th><%= t(:Description) %></th>
+    </tr>
+  </thead>
 
-<% @shops.each do |shop| %>
-  <tr>
-    <td><%= link_to_show shop %></td>
-    <td><%= link_to_edit edit_shop_path(shop) %></td>
-    <td><%= link_to_delete shop %></td>
-    <td><%= shop.name %></td>
-    <td><%= shop.description[0,30] %></td>
-  </tr>
-<% end %>
+  <tbody>
+    <% @shops.each do |shop| %>
+    <tr>
+      <td><%= link_to_show shop %></td>
+      <td><%= link_to_edit edit_shop_path(shop) %></td>
+      <td><%= link_to_delete shop %></td>
+      <td><%= shop.name %></td>
+      <td><%= shop.description[0,30] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+
+  <tfoot></tfoot>
+
 </table>
 
 <%= ending_view_index(new_shop_path) %>
