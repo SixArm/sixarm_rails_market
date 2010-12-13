@@ -1,11 +1,10 @@
 Market::Application.routes.draw do
-  resources :shopkeepers
 
-  resources :shops
-
-  resources :users
-
+  resources :images
   resources :items
+  resources :shopkeepers
+  resources :shops
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
