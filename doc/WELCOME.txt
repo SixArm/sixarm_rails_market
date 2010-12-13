@@ -1,0 +1,7 @@
+Welcome to the market builder.
+
+Here are the settings:
+  * Shop Name
+
+Here are the images you will use:
+  * banner.jpg is 960x120 pixels
