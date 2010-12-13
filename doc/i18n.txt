@@ -1,0 +1,24 @@
+!! Internationalization and Localization
+
+First read these files:
+  * language.txt  
+  * currency.txt
+
+We wrap our internationalization and localization
+values into generalized methods, akin to #translate.
+
+class Item
+
+  def name
+    # return the appropriate name for the locale,
+    # for example English will return #name_in_en
+  end
+
+  def price
+    # return the appropriate currency for the locale,
+    # for example U.S. Dollars will return #price_in_usd
+  end
+
+end
+
+

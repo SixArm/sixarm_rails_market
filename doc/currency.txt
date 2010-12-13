@@ -1,0 +1,16 @@
+!! Currencies
+
+We use these currencies:
+  * CHF: Swiss Franc
+  * CNY: China Yuan
+  * EUR: Euro
+  * GBP: Great Britain Pound
+  * INR: India Rupee
+  * JPY: Japan Yen
+  * USD: United States Dollar
+
+We use these naming conventions for currencies:
+  * price_in_chf: Price in Swiss Francs
+  * price_in_cny: Price in China Yuans
+  * price_in_eur: Price in Euros
+  * etc.

@@ -1,0 +1,34 @@
+!! Layouts
+
+We use a layout customizer to provide layouts that depend on the request host.
+
+For example, a request to <code>http://example.com</code> has the request host <code>example.com</code> and there is a folder <code>app/views/layouts/example.com/</code>
+
+The <code>app/views/layouts/</code> folder has a subdirectory for each domain
+that we are hosting. 
+
+Each host get its own layout folder:
+  * Request host: <code>example.com</code>
+  * Within the Rails app: <code>app/views/layouts/example.com/</code>
+  * Application layout: app/views/layouts/example.com/application.html.erb</code>
+
+We build this feature in ApplicationController:
+
+  class ApplicationController < ActionController::Base
+
+    layout :layout_customizer
+
+    private
+    def layout_customizer
+      layout_folder + "application"
+    end
+
+    def layout_folder
+      # We trim a leading "a." because we use this
+      # convention for localhost development.
+      request.host().sub(/^a\./,'') + "/"
+    end
+
+end
+
+

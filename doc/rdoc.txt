@@ -1,0 +1,11 @@
+To have ri data for core and stdlib you'll need to:
+
+  gem install rdoc-data
+
+then run:
+
+  rdoc-data --install
+
+To have ri data for you gems you'll also need to run:
+
+  gem rdoc --all --overwrite

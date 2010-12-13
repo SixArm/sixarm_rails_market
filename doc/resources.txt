@@ -1,0 +1,32 @@
+!! Resources
+
+Users
+  * username:string
+  * password:string
+  * name_in_en:string
+  * description_in_en:string
+
+Shops
+  * name_in_en:string
+  * description_in_en:string
+
+Shopkeepers
+  * user_id:integer
+  * shop_id:integer
+
+Items
+  * name_in_en:string
+  * length:decimal
+  * width:decimal
+  * height:decimal
+  * mass:decimal
+  * price_in_usd:decimal
+  * shop_id:integer
+
+Images
+  * name_in_en:string
+  * width:integer
+  * height:integer
+  * src:string
+  * longdesc:string
+  * path:string

@@ -1,0 +1,86 @@
+!! Views
+
+We use many helpers in our views.
+Here are some sample page templates.
+
+index.html.erb
+  <%= begin_view_index(:Items) %>
+
+  <table class="datatable">
+    <thead>
+      <tr>
+        <th></th>
+        <th><%= t(:Name) %></th>
+        <th><%= t(:Description) %></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @items.each do |item| %>
+      <tr>
+        <td><%= link_to_show_edit_delete(item,edit_item_path(item)) %></td>
+        <td><%= item.name %></td>
+        <td><%= item.description %></td>
+      </tr>
+      <% end %>
+    </tbody>
+
+    <tfoot></tfoot>
+
+  </table>
+
+<%= end_view_index(new_item_path) %>
+
+new.html.erb
+  <%= begin_view_edit(:Item) %>
+  <%= render 'form' %>
+  <%= end_view_edit(items_path,@item) %>
+
+edit.html.erb
+  <%= begin_view_edit(:Item) %>
+  <%= render 'form' %>
+  <%= end_view_edit(items_path,@item) %>
+
+show.html.erb
+  <p id="notice"><%= notice %></p>
+
+  <%= begin_view_show(:Item) %>
+
+  <%= h3(:Name) %>
+  <%= @item.name %>
+
+  <%= end_view_show(items_path, edit_item_path(@item)) %>
+
+_form.html.erb
+
+  <%= form_for(@item) do |f| %>
+
+    <% if @item.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(@item.errors.count, "error") %><%= t(:error_explanation_header) %></h2>
+
+        <ul>
+        <% @item.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label t(:Name) %><br/>
+      <%= f.text_field :name_in_en %>
+    </div>
+
+    <div class="field">
+      <%= f.label t(:Description) %><br/>
+      <%= f.text_field :description_in_en %>
+    </div>
+
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+
+  <% end %>
+
+

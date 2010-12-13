@@ -1,0 +1,16 @@
+!! Gems
+
+MySQL 2
+   Faster MySQL database driver for Rails
+   gem install mysql2
+   https://github.com/brianmario/mysql2
+
+Inherited Resources
+   Base class for controllers to inherit all restful actions
+   gem install inherited_resources
+   https://github.com/josevalim/inherited_resources
+
+Liquid
+  Safe, customer facing template language for flexible web apps
+  gem install liquid
+  https://github.com/tobi/liquid

@@ -1,0 +1,17 @@
+!! Languages
+
+We use these languages:
+  * DE: Deutsch a.k.a. German
+  * EN: English
+  * ES: Espanol a.k.a. Spanish
+  * FR: French
+  * HI: Hindi
+  * IT: Italian
+  * JA: Japanese
+  * ZH: Chinese
+
+We use these naming conventions for strings:
+  * name_in_de: Name in Deutsh a.k.a. German
+  * name_in_en: Name in English
+  * name_in_es: Name in Espanol a.k.a. Spanish
+  * etc.
