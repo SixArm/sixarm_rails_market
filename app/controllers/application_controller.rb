@@ -1,10 +1,16 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  layout :application_layout
+  layout :layout_customizer
 
   private
-  def application_layout
-    request.host().sub(/^a\./,'')
+  def layout_customizer
+    layout_folder + "application"
+  end
+
+  def layout_folder
+    # We trim a leading "a." because we use this
+    # convention for localhost development.
+    request.host().sub(/^a\./,'') + "/"
   end
 
 end
