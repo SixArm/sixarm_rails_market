@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Even Howard Crochet</title>
+<link rel="stylesheet" media="screen" href="/css/screen.css" type="text/css">
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10136105-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- MouseFlow -->
+<script type="text/javascript">document.write(unescape("%3Cscript src='" + (("https:" == document.location.protocol) ? "https" : "http") + "://a.mouseflow.com/projects/14c44886-0277-439d-963d-3a0f322381f1.js' type='text/javascript'%3E%3C/script%3E"));</script>
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript">if (!jQuery){ document.write(unescape("%3Cscript src='/js/jquery/1.4.4/jquery.min.js' type='text/javascript'%3E%3C/script%3E")); }</script>
+
+<!-- JQuery UI -->
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.6/jquery-ui.min.js"></script>
+<script type="text/javascript">if (!jQuery.ui) { document.write(unescape("%3Cscript src='/js/jquery/1.8.6/jquery-ui.min.js' type='text/javascript'%3E%3C/script%3E")); }</script>
+
+<!-- JQuery Extensions -->
+<script src="/js/jquery.shorten/jquery.shorten.min.js"></script>
+
+<!-- JQuery Document Ready -->
+<script>
+  $(document).ready(function() {
+  $('.gallery_item > .name').shorten();
+  });
+</script>
+
+</head>
+
+<body>
+
+<div id="content">
+<center>
+
+<a href="/"><img src="/shops/evenhoward.com/banner.png" alt="Even Howard Crochets banner" width="960" height="120" /></a>
+
+<div id="faves">
+<a class="fave" href="http://www.etsy.com/shop/nadene"><img width="16" height="16" src="/images/faves/etsy.gif">etsy shop</a>
+<a class="fave" href="https://www.facebook.com/evenhoward.art"><img width="16" height="16" src="/images/faves/facebook.gif">facebook page</a>
+<a class="fave" href="http://evenhoward.wordpress.com/"><img width="16" height="16" src="/images/faves/wordpress.gif">wordpress blog</a>
+<a class="fave" href="http://twitter.com/evenhoward"><img width="16" height="16" src="/images/faves/twitter.gif">twitter news</a>
+<a class="fave" href="http://www.ravelry.com/projects/evenhoward/lace-scrap-necklace"><img width="16" height="16" src="/images/faves/ravelry.gif">ravelry lace</a>
+<a class="fave" href="mailto:evenhoward+crochet@gmail.com"><img width="16" height="16" src="/images/faves/gmail.gif">email me</a>
+</div><p>
+
+<%= yield %>
+
+<p>each is unique (ooak = one of a kind)
+
+<p>i ship by priority mail and i include tracking in your price.
+<br>you'll receive your piece within 2-3 shipping days in the u.s.
+
+<p>****
+<br>thank you for supporting handmade!
+<br>i love creating special treasures that also express simple joy.
+<br>your shopping and gifting experience should be equally enjoyable.
+<br>please contact me via evenhoward [at] gmail.com
+<br>****
+
+</center>
+</div>
+
+<script type="text/javascript">
+ $(function() {
+  $(".shorten").shorten();
+ });
+</script>
+
+</body>
+</html>
