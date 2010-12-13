@@ -1,2 +1,95 @@
 Use this README file to introduce your application and point to useful places in the API for learning more.
 Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+!! Gems
+
+Inherited Resources
+   Base class for controllers to inherit all restful actions
+   https://github.com/josevalim/inherited_resources
+   gem install inherited_resources
+
+Liquid
+  Safe, customer facing template language for flexible web apps
+  https://github.com/tobi/liquid
+  gem install liquid
+
+
+!! Internationalization and Localization
+
+We use these languages:
+  <ul>
+  <li>DE: Deutsch a.k.a. German
+  <li>EN: English
+  <li>ES: Espanol a.k.a. Spanish
+  <li>FR: French
+  <li>HI: Hindi
+  <li>IT: Italian
+  <li>JA: Japanese
+  <li>ZH: Chinese
+  </ul>
+
+We use these naming conventions for strings:
+  <ul>
+  <li>name_in_de: Name in Deutsh a.k.a. German
+  <li>name_in_en: Name in English
+  <li>name_in_es: Name in Espanol a.k.a. Spanish
+  <li>etc.
+  </ul>
+
+We use these currencies:
+  <ul>
+  <li>CHF: Swiss Franc
+  <li>CNY: China Yuan
+  <li>EUR: Euro
+  <li>GBP: Great Britain Pound
+  <li>INR: India Rupee
+  <li>JPY: Japan Yen
+  <li>USD: United States Dollar
+  </ul>
+
+We use these naming conventions for prices:
+  <ul>
+  <li>price_in_chf: Price in Swiss Francs
+  <li>price_in_cny: Price in China Yuans
+  <li>price_in_eur: Price in Euros
+  <li>etc.
+  </ul>
+
+
+!! Resources
+
+Users
+  username:string
+  password:string
+  name_in_en:string
+  description_in_en:string
+
+Shops
+ name_in_en:string
+ description_in_en:string
+
+Shopkeepers
+  user_id:integer
+  shop_id:integer
+
+Items
+ name_in_en:string
+ length:decimal
+ width:decimal
+ height:decimal
+ mass:decimal
+ price_in_usd:decimal
+ shop_id:integer
+
+Images
+  name_in_en:string
+  width:integer
+  height:integer
+  src:string
+  longdesc:string
+  path:string
+
+!! Localizations
+
+Some of our fields are localized.
+
