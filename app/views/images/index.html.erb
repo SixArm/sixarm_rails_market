@@ -1,0 +1,36 @@
+<%= begin_view_index(:Images) %>
+
+<table class="datatable">
+
+  <thead>
+    <tr>
+      <th></th>
+      <th><%= t(:Name) %></th>
+      <th><%= t(:Width) %></th>
+      <th><%= t(:Height) %></th>
+      <th><%= t(:Source_URL) %></th>
+      <th><%= t(:Long_Desc_URL) %></th>
+      <th><%= t(:Path) %></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @images.each do |image| %>
+    <tr>
+      <td><%= link_to_show_edit_delete(image,edit_image_path(image)) %></td>
+      <td><%= image.name %></td> 
+      <td><%= image.height %></td> 
+      <td><%= image.width %></td> 
+      <td><%= image.src %></td> 
+      <td><%= image.longdesc %></td> 
+      <td><%= image.path %></td> 
+    </tr>
+    <% end %>
+  </tbody>
+
+  <tfoot></tfoot>
+
+</table>
+
+<%= end_view_index(new_image_path) %>
+

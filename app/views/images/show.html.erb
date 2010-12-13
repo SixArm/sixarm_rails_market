@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<%= begin_view_show(:Image) %>
+
+<%= h3(:Name) %>
+<%= @image.name %>
+
+<%= h3(:Width) %>
+<%= @image.width %>
+
+<%= h3(:Height) %>
+<%= @image.height %>
+
+<%= h3(:Source_URL) %>
+<%= @image.src %>
+
+<%= h3(:Long_Desc_URL) %>
+<%= @image.longdesc %>
+
+<%= h3(:Path) %>
+<%= @image.path %>
+
+<%= end_view_show(images_path,edit_image_path(@image)) %>
+

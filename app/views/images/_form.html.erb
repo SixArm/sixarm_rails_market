@@ -1,0 +1,51 @@
+<%= form_for(@image) do |f| %>
+
+  <% if @image.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@image.errors.count, "error") %><%= t(:error_explanation_header) %></h2>
+
+      <ul>
+      <% @image.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label t(:Name) %><br/>
+    <%= f.text_field :name_in_en %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Width) %><br/>
+    <%= f.text_field :width %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Height) %><br/>
+    <%= f.text_field :height %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Source_URL) %><br/>
+    <%= f.text_field :src %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Long_Desc_URL) %><br/>
+    <%= f.text_field :longdesc %>
+  </div>
+
+  <div class="field">
+    <%= f.label t(:Path) %><br/>
+    <%= f.text_field :path %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+<% end %>
+
+
