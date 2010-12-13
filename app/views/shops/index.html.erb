@@ -12,7 +12,7 @@
   <tbody>
     <% @shops.each do |shop| %>
     <tr>
-      <td><%= link_to_show_edit_delete(shop,edit_shop_path) %></td>
+      <td><%= link_to_show_edit_delete(shop,edit_shop_path(shop)) %></td>
       <td><%= shop.name %></td>
       <td><%= shop.description[0,30] %></td>
     </tr>
