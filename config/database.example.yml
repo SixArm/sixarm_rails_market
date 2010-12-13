@@ -1,0 +1,22 @@
+development:
+  adapter: mysql
+  database: market_development
+  username: sixarm
+  password: ********
+  host: localhost
+
+test:
+  adapter: mysql
+  database: market_test
+  username: sixarm
+  password: ********
+  host: localhost
+
+production:
+  adapter: mysql
+  database: market_production
+  username: sixarm
+  password: ********
+  host: localhost
+
+
