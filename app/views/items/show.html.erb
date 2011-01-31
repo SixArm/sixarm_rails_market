@@ -1,30 +1,52 @@
+<% item || = @item %>
 <p id="notice"><%= notice %></p>
 
 <%= begin_view_show(:Item) %>
 
-<%= h3(:Name) %>
-<%= @item.name %>
+<div class="views item show">
 
-<%= h3(:Description) %>
-<%= @item.description %>
+<div class="name">
+<h1><%= item.name %></h1>
+</div>
 
-<%= h3(:Price) %>
-<%= @item.price %> <%= t(:USD) %>
+<div class="category">
+<h2><%= item.category %></h2>
+</div>
 
-<%= h3(:Length) %>
-<%= @item.length %> <%= t(:Meters) %>
+<div class="tags">
+<h3><%= item.tags %></h3>
+</div>
 
-<%= h3(:Width) %>
-<%= @item.height %> <%= t(:Meters) %>
+<% if item.paypal_listing %>
+<%= render 'paypal_listing' %>
+<% end %>
 
-<%= h3(:Height) %>
-<%= @item.height %> <%= t(:Meters) %>
+<div class="description">
+<%= item.description %>
+</div>
 
-<%= h3(:Volume) %>
-<%= @item.volume %> <%= t(:Meters) %><sup>3</sup>
+<div class="price">
+<%= item.price %> <%= t(:USD) %>
+</div>
 
-<%= h3(:Weight) %>
-<%= @item.weight %> <%= t(:Grams) %>
+<% if item.etsy_listing %>
+<%= render 'etsy_listing' %>
+<% end %>
 
-<%= end_view_show(items_path, edit_item_path(@item)) %>
+<div class="shipping">
+<%= item.shipping || item.shop.shipping %>
+</div>
+
+<div class="dimensions">
+<ul>
+<li><% if item.weight %>Weight: <%= item.weight %> <%= t(:Grams)  %><% end %>
+<li><% if item.length %>Length: <%= item.length %> <%= t(:Meters) %><% end %>
+<li><% if item.width  %>Width:  <%= item.width  %> <%= t(:Meters) %><% end %>
+<li><% if item.height %>Height: <%= item.height %> <%= t(:Meters) %><% end %>
+<li><% if item.volume %>Volume: <%= item.volume %> <%= t(:Meters) %><% end %>
+</ul>
+</div>
+
+</div>
+<%= end_view_show(items_path, edit_item_path(item)) %>
 

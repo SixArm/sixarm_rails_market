@@ -1,8 +1,10 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.3'
-gem 'liquid'
 gem 'inherited_resources'
+gem 'liquid'
+gem 'mysql2'
+gem 'uuidtools'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

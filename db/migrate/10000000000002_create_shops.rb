@@ -6,6 +6,10 @@ class CreateShops < ActiveRecord::Migration
     create_table TABLE do |t|
       t.timestamps
 
+      # key is a one word id that we use in many places
+      # to identify this shop and its associated files.
+      t.column :key
+
       # name
       t.column :name_in_de, :string, :default => ""  # de = deutsch
       t.column :name_in_en, :string, :default => ""  # en = english
@@ -25,7 +29,7 @@ class CreateShops < ActiveRecord::Migration
       t.column :description_in_it, :text, :default => ""  # it = italian
       t.column :description_in_ja, :text, :default => ""  # ja = japanese
       t.column :description_in_zh, :text, :default => ""  # zh = chinese 
-      
+
     end
 
     add_index(TABLE, :name_in_de)

@@ -1,14 +1,19 @@
 !! Gems
 
 MySQL 2
-   Faster MySQL database driver for Rails
-   gem install mysql2
-   https://github.com/brianmario/mysql2
+  Faster MySQL database driver for Rails
+  gem install mysql2
+  https://github.com/brianmario/mysql2
+
+UUID Tools
+  A simple universally unique ID generation library
+
+  https://github.com/sporkmonger/uuidtools
 
 Inherited Resources
-   Base class for controllers to inherit all restful actions
-   gem install inherited_resources
-   https://github.com/josevalim/inherited_resources
+  Base class for controllers to inherit all restful actions
+  gem install inherited_resources
+  https://github.com/josevalim/inherited_resources
 
 Liquid
   Safe, customer facing template language for flexible web apps
