@@ -1,3 +1,7 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
+
 class CreateShopkeepers < ActiveRecord::Migration
 
   TABLE=:shopkeepers

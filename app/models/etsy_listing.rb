@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 class EtsyListing < ActiveRecord::Base
 
   belongs_to :item

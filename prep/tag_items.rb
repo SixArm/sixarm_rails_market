@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
 
 EVENHOWARD_GALLERY_COLUMN_COUNT=4
 

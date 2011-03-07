@@ -1,3 +1,7 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
+
 class CreateEtsyListings < ActiveRecord::Migration
 
   TABLE=:etsy_listings

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 module BeginAndEndViewHelper
 
   # Begin a view page by providing a page-specific footer,

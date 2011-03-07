@@ -1,3 +1,6 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
 class PayPalListing
 
   belongs_to :item

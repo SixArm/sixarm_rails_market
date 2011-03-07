@@ -1,3 +1,7 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
+
 class CreateUsers < ActiveRecord::Migration
 
   TABLE=:users

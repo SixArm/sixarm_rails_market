@@ -1,3 +1,7 @@
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
+
 class CreatePayPalListings < ActiveRecord::Migration
 
   TABLE=:paypal_listings

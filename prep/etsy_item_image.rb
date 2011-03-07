@@ -1,4 +1,6 @@
-#!/usr/bin/env ruby                                                                                                                                                                                                                          
+#!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
+
 class EtsyItemImage
 
   attr_accessor :xid

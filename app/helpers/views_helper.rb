@@ -1,3 +1,6 @@
+# -*- coding: utf-8 -*-
+
+
 module ViewsHelper
 
   H1_OPEN = "<h1>".html_safe
