@@ -34,7 +34,8 @@ module BeginAndEndViewHelper
   # This returns "<h1>List Objects</h1>".
 
   def begin_view_index(objects_locale_key)
-    begin_view(t(:List)," ",t(objects_locale_key))
+    begin_view(t(objects_locale_key))
+    #begin_view(t(:List)," ",t(objects_locale_key))
   end
 
 
@@ -54,7 +55,6 @@ module BeginAndEndViewHelper
   def begin_view_show(object_locale_key)
     begin_view(t(:Show)," ",t(object_locale_key))
   end
-
 
 
   # End a view page by providing a page-specific footer,
@@ -79,7 +79,7 @@ module BeginAndEndViewHelper
   # You may want to override this for your app.
   # This adds a link_to_back and link_to_show.
 
-  def end_view_edit(objects_path,object)
+  def end_view_edit(objects_path=nil,object=nil)
     end_view(link_to_back(objects_path),link_to_show(object))
   end
 
@@ -88,7 +88,7 @@ module BeginAndEndViewHelper
   # You may want to override this for your app.
   # This adds a link_to_create.
 
-  def end_view_index(new_object_path)
+  def end_view_index(new_object_path=nil)
     end_view(link_to_create(new_object_path))
   end
 
@@ -97,7 +97,7 @@ module BeginAndEndViewHelper
   # You may want to override this for your app.
   # This adds a link_to_back.
 
-  def end_view_new(objects_path)
+  def end_view_new(objects_path=nil)
     end_view(link_to_back(objects_path))
   end
 
@@ -106,7 +106,7 @@ module BeginAndEndViewHelper
   # You may want to override this for your app.
   # This adds a link_to_back and link_to_edit.
 
-  def end_view_show(objects_path, edit_object_path)
+  def end_view_show(objects_path=nil, edit_object_path=nil)
     end_view(link_to_back(items_path)," ",link_to_edit(edit_object_path))
   end
 

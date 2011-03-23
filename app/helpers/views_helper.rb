@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-
+# -*- coding: utf-8 -*-                                                                                                           
 
 module ViewsHelper
 
@@ -23,31 +22,33 @@ module ViewsHelper
   end
 
   def icon(file_name_key,alt_text_key)
-    "<img border=\"0\" width=\"16\" height=\"16\" src=\"/images/icons/#{file_name_key}.png\" alt=\"#{t(alt_text_key)}\"/>".html_safe
+    "<img border=\"0\" width=\"16\" height=\"16\" src=\"/img/icons/silk/#{file_name_key}.png\" alt=\"#{t(alt_text_key)}\"/>".html_safe
   end
 
   def link_to_create(ops={})
-    link_to(icon(:create, t(:Create)), ops)
+    ops ? link_to(icon(:create, t(:Create)), ops) : ''
   end
 
   def link_to_back(ops={})
-    link_to(icon(:back, t(:Back)), ops)
+    ops ? link_to(icon(:back, t(:Back)), ops) : ''
   end
 
   def link_to_delete(obj)
-    link_to(icon(:delete, t(:Delete)), obj, :confirm => t(:Delete_Confirm), :method => :delete)
+    obj ? link_to(icon(:delete, t(:Delete)), obj, :confirm => t(:Delete_Confirm), :method => :delete) : ''
   end
 
   def link_to_edit(ops={})
-    link_to(icon(:edit, t(:Edit)), ops)
+    ops ? link_to(icon(:edit, t(:Edit)), ops) : ''
   end
 
   def link_to_show(ops={})
-    link_to(icon(:show, t(:Show)), ops)
+    ops ? link_to(icon(:show, t(:Show)), ops) : ''
   end
 
   def link_to_show_edit_delete(obj, edit_obj_path)
-    link_to_show(obj) + link_to_edit(edit_obj_path) + link_to_delete(obj)
+    (obj ? link_to_show(obj) : '') + (edit_obj_path ? link_to_edit(edit_obj_path) : '') + (obj ? link_to_delete(obj) : '')
   end
+
+  ### 
 
 end
